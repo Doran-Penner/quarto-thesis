@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "booktest0"
+  author: "Doran Penner"
+  date: "May 2026"
+  date-format: "MMMM YYYY"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  division: pants
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    template: template.tex
+
+
+
