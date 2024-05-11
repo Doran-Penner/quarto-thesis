@@ -1,4 +1,35 @@
-% TODO give credit? how?
+% TODO better citation?
+
+% This file is based on the official thesis specification and code by Sam Noble.
+% I'm uncertain if what I've done counts as enough to be considered my own work or
+% a derivative of Sam's, so for the sake of giving credit and legal safety
+% I will include the full original comment here, with my name added to it.
+
+%
+% This file is copyright (C) 2003 Sam Noble. It may be modified so long
+% as my name is not removed and the modifier adds his name to the file.
+% Redistribution permitted.
+%
+% 27 Jan 2004	Sam Noble	Removed tocbibind dependency.
+% 04 Dec 2001 	Sam Noble	Class file
+% 03 Sep 1995	David Perkinson	Title Page
+% Acknowledgements Page, David Perkinson & Sam Noble
+% May 2005 Patrick Carlisle Table of contents chapter definition
+% 2004-2005 Ben Salzberg (BTS) a variety of tweaks here and in the template
+% 2024 Doran Aviv Penner: heavy modification for new template
+%
+% Oddities:
+%
+%   We *ASSUME* that any time \cleardoublepage is called
+%  we actually want a blank back side with NO page number/heading
+%
+%   Minor bug -- seems to be a more general LaTeX thing:
+%  If you use \frontmatter \mainmatter without any chapters inbetween
+%  be prepared to have the page numbering messed up. Not a big deal,
+%  but I'm not sure how to fix it.
+%
+%
+
 \begin{center}
     $title$
     \vfil
