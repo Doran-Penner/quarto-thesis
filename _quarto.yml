@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "booktest0"
+  title: "How to Make a Thesis Template"
   author: "Doran Penner"
   date: "May 2026"
   date-format: "MMMM YYYY"
@@ -11,15 +11,15 @@ book:
     - intro.qmd
     - summary.qmd
     - references.qmd
-  division: pants
 
 bibliography: references.bib
 
 format:
-  html:
-    theme: cosmo
+  # html is for quickly viewing, the final
+  # thesis will always be a pdf
+  html: default
   pdf:
-    template: template.tex
-
-
-
+    documentclass: scrbook
+    template-partials:
+      - before-body.tex
+    lof: false  # set to `true` if you want a list of figures
