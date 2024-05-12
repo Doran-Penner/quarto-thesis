@@ -1,7 +1,5 @@
-# Preface {.unnumbered}
+# Abstract {.unnumbered}
 
-This is a Quarto book.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>. Or... just mess around!
-
-Yeah... I'm gonna use [the docs](https://quarto.org)
+NOTE THAT this is the `index.qmd` file, which is required for Quarto.
+It comes after the table of contents, so it should have the abstract
+(and either itself have the dedication or there should be another page after it).

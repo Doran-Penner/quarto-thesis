@@ -7,9 +7,15 @@ book:
   date: "May 2026"
   date-format: "MMMM YYYY"
   chapters:
-    - index.qmd
+    - index.qmd  # TODO always needed, what should it contain?
+    - dedication.qmd
+    # and now we get to the main sections!
     - intro.qmd
     - summary.qmd
+    # - chapters/chap3.qmd  # TODO organize later
+  appendices:
+    - glossary.qmd
+    - appendix.qmd
     - references.qmd
 
 bibliography: references.bib
