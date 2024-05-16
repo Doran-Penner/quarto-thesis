@@ -1,10 +1,10 @@
 # WIP
 
-This is a repository for a Reed College thesis template using [quarto](https://www.quarto.org). Not currently usable (i.e. not compliant with specification), but we plan to get there!
+This is a repository for a Reed College thesis template using [quarto](https://www.quarto.org). Technically usable but not the prettiest... we're getting there though!
 
 ## Roadmap
 
-### v1
+### ~~v1~~ (done!)
 Fully compliant with [official specificaion](https://libguides.reed.edu/thesis/formatting)
 
 This is the "make it work no matter what" stage: even if we need to copy/paste the entire RMarkdown template and then shove Quarto in there, we'll get it to work.

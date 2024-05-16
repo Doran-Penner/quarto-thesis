@@ -9,7 +9,7 @@
 % Acknowledgements Page, David Perkinson & Sam Noble
 % May 2005 Patrick Carlisle Table of contents chapter definition
 % 2004-2005 Ben Salzberg (BTS) a variety of tweaks here and in the template
-% 2024 Doran Aviv Penner: heavy modification for new template
+% 2024 Doran Aviv Penner (DAP): heavy modification for new template
 %
 % Oddities:
 %
@@ -24,8 +24,9 @@
 %
 
 % This file is adapted from the reed thesis class `reedthesis.cls',
-% so I have copied the above copyright notice and added my name.
+% so I have copied the above copyright notice and added my name. (DAP)
 
+\frontmatter
 \begin{center}
     $title$
     \vfil
@@ -66,3 +67,21 @@
     Pancho Savery
     \vfil
 \end{center}
+
+% TODO this technically works for pre-ToC content, but might be brittle;
+% give it another pass before calling it production-ready
+\cleardoublepage
+
+\chapter*{Preface}\label{preface}
+
+\markboth{Preface}{Preface}
+
+Blah blah blah, stuff you should know
+
+\cleardoublepage
+
+\chapter*{Abbreviations}\label{abbreviations}
+
+\markboth{Abbreviations}{Abbreviations}
+
+xyz = misc.

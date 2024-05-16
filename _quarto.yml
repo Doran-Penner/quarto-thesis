@@ -6,6 +6,7 @@ book:
   author: "Doran Penner"
   date: "May 2026"
   date-format: "MMMM YYYY"
+  language: "en"
   chapters:
     - index.qmd  # TODO always needed, what should it contain?
     - dedication.qmd
@@ -26,6 +27,23 @@ format:
   html: default
   pdf:
     documentclass: scrbook
+    geometry:
+      - inner=1.5in
+      - outer=1in
+      # - showframe  # TODO remove when done poking around
+    # keep-tex: true  # TODO same here
     template-partials:
       - before-body.tex
     lof: false  # set to `true` if you want a list of figures
+    lot: false  # set to `true` if you want a list of tables
+    # if you want an index, do two things:
+    # 1. uncomment the below lines
+    # 2. whenever you want an index entry, do \index{entry} after the word
+    #   e.g. Gene expression \index{Gene expression} can be confusing!
+    # include-in-header:
+    #   text: |
+    #       \usepackage{makeidx}
+    #       \makeindex
+    # include-after-body:
+    #   text: |
+    #       \printindex
