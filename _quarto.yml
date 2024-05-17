@@ -27,6 +27,7 @@ format:
   html: default
   pdf:
     documentclass: scrbook
+    # fontfamily: concmath  # change the font if you want to
     geometry:
       - inner=1.5in
       - outer=1in
