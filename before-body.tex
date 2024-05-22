@@ -56,23 +56,17 @@
     $date$
     
     \cleardoublepage
-    
-    % TODO center in middle of page
-    \vfil
+    \vspace*{\fill}
+    \par\vskip 6cm
     Approved for the Division \\
     $for(affiliations)$
-    $it.group$ \\
+    ($it.group$) \\
     $endfor$
-    
-    % TODO space to sign, underline
-    \bigskip
-    \bigskip
-    \bigskip
-    \hrule
-    
-    \medskip
-    Pancho Savery
-    \vfil
+    \par\vskip 2cm
+    \hrule  % signing line, could be shorter
+    \par\vskip 3cm
+    Pancho Savery  % advisor
+    \vspace*{\fill}
 \end{center}
 
 % TODO this technically works for pre-ToC content, but might be brittle;
