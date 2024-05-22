@@ -39,10 +39,8 @@
     % the template magic below & in the approval page is taken from Cameron Patrick 2023,
     % https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/
     % TODO find a cleaner way to do this, and/or ensure that it'll continue to work
-    $for(by-author)$
-    $for(it.affiliations)$
-    $it.department$ \\ % THIS is the actual "presented to" ... pretty cursed
-    $endfor$
+    $for(affiliations)$
+    $it.department$ \\
     $endfor$
     Reed College
     \vfil
@@ -62,10 +60,8 @@
     % TODO center in middle of page
     \vfil
     Approved for the Division \\
-    $for(by-author)$
-    $for(it.affiliations)$
-    ($it.group$) \\
-    $endfor$
+    $for(affiliations)$
+    $it.group$ \\
     $endfor$
     
     % TODO space to sign, underline
