@@ -5,13 +5,6 @@ book:
   title: "How to Make a Thesis Template"
   author:
     - name: "Doran Penner"
-      affiliations:
-          # TODO use better names than these two, this is a definite hack
-          # (schema at https://quarto.org/docs/journals/authors.html)
-          # below is the "presented to" line, fill in whatever text you need
-        - department: "The Division of Astronomically Silly Sciences"
-          # below is the division name on the approval page
-          group: "Earth Sciences"
       
   date: "May 2026"
   date-format: "MMMM YYYY"

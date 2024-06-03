@@ -16,3 +16,6 @@ how to use with online RStudio:
 - hit render to render, menu next to it for html/pdf
 note on this: not a great way to see the preface/abbreviations...
 we should really find a better way to do that
+
+It's kinda awkward to have the config split between `_quarto.yml` and `index.qmd`...
+can we consolidate it, or at least make a reasonable split?

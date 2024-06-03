@@ -1,3 +1,10 @@
+---
+presented-to: "The Division of Astronomically Silly Sciences"
+approved-for: "Earth Sciences"
+preface: "This is called the \"pre-face\" but it's after the book's face (cover)... sus"
+abbrs: "xyz = anything you want it to be :)"  # TODO nice thesisdown mapping
+---
+
 # Abstract {.unnumbered}
 
 NOTE THAT this is the `index.qmd` file, which is required for Quarto.

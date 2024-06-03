@@ -36,12 +36,7 @@
     \vfil
     A Thesis \\
     Presented to \\
-    % the template magic below & in the approval page is taken from Cameron Patrick 2023,
-    % https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/
-    % TODO find a cleaner way to do this, and/or ensure that it'll continue to work
-    $for(affiliations)$
-    $it.department$ \\
-    $endfor$
+    $presented-to$ \\
     Reed College
     \vfil
     \hrule
@@ -59,9 +54,7 @@
     \vspace*{\fill}
     \par\vskip 6cm
     Approved for the Division \\
-    $for(affiliations)$
-    ($it.group$) \\
-    $endfor$
+    ($approved-for$)
     \par\vskip 2cm
     \hrule  % signing line, could be shorter
     \par\vskip 3cm
@@ -71,18 +64,25 @@
 
 % TODO this technically works for pre-ToC content, but might be brittle;
 % give it another pass before calling it production-ready
+$if(preface)$
 \cleardoublepage
 
 \chapter*{Preface}\label{preface}
 
 \markboth{Preface}{Preface}
 
-Blah blah blah, stuff you should know
+$preface$
 
+$endif$
+
+$if(abbrs)$
 \cleardoublepage
 
 \chapter*{Abbreviations}\label{abbreviations}
 
 \markboth{Abbreviations}{Abbreviations}
 
-xyz = misc.
+% TODO make this a nice mapping like in thesisdown, not just text
+$abbrs$
+
+$endif$
